@@ -105,34 +105,48 @@ textarea{
 .icon {
     display: inline-block;
 }
+.text-orange{
+    color: #ff5912;
+}
 /*DEFAULT CLASSES END*/
 
 /*DEFAULT COMPONENTS START*/
 .header .bottom-header{
+    border-top: 1px solid #edeff1;
+    border-bottom: 1px solid #edeff1;
     padding: 40px 0;
+}
+.header .bottom-header .header-nav a{
+    font-size: 16px;
+}
+.header .bottom-header .header-nav a + a{
+    margin-left: 35px;
 }
 .user-controls a{
     position: relative;
     display: inline-block;
 }
-.user-controls a + a{
+.header .bottom-header .user-controls a + a{
     margin-left: 30px;
 }
-.cart-counter{
-    padding-top: 2px;
+.header .bottom-header .cart-counter{
+    padding-top: 3px;
     text-align: center;
     min-width: 18px;
     height: 18px;
     position: absolute;
-    top: -100%;
+    top: calc(-100% - 2px);
     left:50%;
     transform: translateX(-50%);
-    font-family:Harmonia_regular, sans-serif;
+    font-size: 10px;
     color: #ffffff;
     display: inline-block;
     background-color: #34404b;
     border: 1px solid #34404b;
     border-radius: 50%;
+}
+.header .bottom-header .header-nav{
+    margin-left: 80px;
 }
 .header .bottom-header .user-controls{
     margin-left: auto;
