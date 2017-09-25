@@ -147,34 +147,6 @@ textarea{
     -webkit-border-radius: 50%;
             border-radius: 50%;
 }
-/*.cart-counter{*/
-    /*position: relative;*/
-    /*font-family:Harmonia_regular;*/
-    /*color: #ffffff;*/
-    /*!*background-color: #34404b;*!*/
-    /*!*border: 1px solid #34404b;*!*/
-    /*!*border-radius: 50%;*!*/
-/*}*/
-/*.cart-counter::before{*/
-    /*left: 50%;*/
-    /*transform: translateX(-50%);*/
-    /*top:-120%;*/
-    /*position: absolute;*/
-    /*content: '';*/
-    /*height: 0;*/
-    /*width: 0;*/
-    /*border: 9px solid #34404b;*/
-    /*border-radius: 50%;*/
-/*}*/
-/*.cart-counter{*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*font-family:Harmonia_regular;*/
-    /*color: #ffffff;*/
-    /*background-color: #34404b;*/
-    /*border: 1px solid #34404b;*/
-    /*border-radius: 8px;*/
-/*}*/
 .header .bottom-header .user-controls{
     margin-left: auto;
 }
