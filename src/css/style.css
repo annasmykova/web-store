@@ -116,14 +116,20 @@ textarea{
 .header .top-header{
     padding: 23px 0;
 }
-.header-contacts span + i{
+.header-contacts li{
+    display: inline-block;
+}
+.header-contacts li + li{
     margin-left: 23px;
 }
-.header-socials a + a{
-    margin-left: 14px;
-}
-.header-contacts span{
+.header-contacts li span{
     margin-left: 10px;
+}
+.header-socials li{
+    display: inline-block;
+}
+.header-socials li + li{
+    margin-left: 14px;
 }
 .header .bottom-header{
     border-top: 1px solid #edeff1;
