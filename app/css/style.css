@@ -150,6 +150,9 @@ textarea{
 .header .bottom-header .header-nav a + a{
     margin-left: 35px;
 }
+.user-controls{
+    white-space: nowrap;
+}
 .user-controls a{
     position: relative;
     display: inline-block;
@@ -163,8 +166,7 @@ textarea{
     min-width: 18px;
     height: 18px;
     position: absolute;
-    top: -webkit-calc(-100% - 2px);
-    top: calc(-100% - 2px);
+    top: -100%;
     left:50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
