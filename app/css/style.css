@@ -92,6 +92,16 @@ img{
 textarea{
     resize: vertical;
 }
+label{
+    margin: 0;
+}
+input, button, select{
+    border: none;
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
 /*STYLE RESET END*/
 
 /*DEFAULT CLASSES START*/
@@ -223,7 +233,6 @@ textarea{
             transform: translateX(-50%);
     font-size: 10px;
     color: #ffffff;
-    display: inline-block;
     background-color: #34404b;
     border: 1px solid #34404b;
     -webkit-border-radius: 50%;
@@ -358,7 +367,74 @@ textarea{
 p{
     color: #495662;
 }
-
+.subscribe-form{
+    padding: 35px 45px;
+}
+.aside-section{
+    padding: 40px;
+}
+.aside-section + .aside-section{
+    margin-top: 30px;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"] +label{
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-size: 16px;
+    color: #34404b;
+    cursor: pointer;
+}
+input[type="checkbox"] + label::before{
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 4px solid #edf0f2;
+    background-color: #edf0f2;
+    margin-right: 13px;
+}
+input[type="checkbox"]:checked + label {
+    color: #ff5912;
+}
+input[type="checkbox"]:checked + label::before {
+    border-color: #ff5912;
+}
+.ui-widget.ui-widget-content{
+    border: none;
+    background-color: #edf0f2;
+    -webkit-border-radius:0;
+            border-radius:0;
+    height: 3px;
+}
+.add-range-value{
+    margin-top: 30px;
+}
+.ui-slider .ui-slider-range{
+    background-color: #34404b;
+}
+.min-value,
+.max-value{
+    position: absolute;
+    bottom: 200%;
+    color: #34404b;
+}
+.ui-widget-content .ui-state-default.ui-slider-handle{
+    width: 11px;
+    height: 11px;
+    background-color: #34404b;
+    -webkit-border-radius:50%;
+            border-radius:50%;
+    border: none;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    top: 50%;
+    outline: none;
+}
 /*DEFAULT COMPONENTS END*/
 
 .sale-carousel{
@@ -483,8 +559,7 @@ p{
     font-size: 18px;
 }
 .adv-area{
-    height: 100px;
-    padding: 30px 0;
+    padding: 27px 0;
     border:1px solid #eaedef;
 }
 .adv-area-title{
@@ -568,4 +643,7 @@ p{
 }
 .best-item:hover .best-item-info{
     opacity: 0;
+}
+.category-wrap{
+    padding-top: 120px;
 }
