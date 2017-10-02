@@ -245,10 +245,12 @@ button{
     color: #3c4751;
     font-size: 18px;
 }
-.item-carousel-description{
-    color: #495662;
-    margin-top: 18px;
+.paragraph-description{
     font-size: 16px;
+    color: #495662;
+}
+.item-carousel-description{
+    margin-top: 18px;
 }
 .price-n-order{
     font-family:'Harmonia_semibold';
@@ -261,11 +263,7 @@ button{
 }
 .order-now span+span{
     display: inline-block;
-    margin-left: 15px;
-}
-.section-descriptions{
-    font-size: 16px;
-    line-height:1.9;
+    margin-left: 8px;
 }
 .items-wrap{
     margin-top: 80px;
@@ -289,6 +287,10 @@ button{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.product-item .product-sizes{
+    font-family:'Harmonia_regular';
+    font-size: 14px;
 }
 .product-item .item-img {
     height: 216px;
@@ -388,6 +390,7 @@ input[type="checkbox"]:checked + label::before {
 .min-value,
 .max-value{
     position: absolute;
+    transform: translateX(-25%);
     bottom: 200%;
     color: #34404b;
 }
@@ -400,6 +403,48 @@ input[type="checkbox"]:checked + label::before {
     transform: translateY(-50%);
     top: 50%;
     outline: none;
+    cursor: pointer;
+}
+.small-title{
+    font-family:'Harmonia_bold';
+    font-size: 18px;
+}
+footer{
+    margin-top: 60px;
+    padding: 90px 0 80px;
+    color: #28313b;
+}
+footer .footer-logo{
+    flex-direction:column;
+    font-size: 14px;
+}
+.footer-logo span{
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.footer-nav ul{
+    font-size: 14px;
+    list-style: unset;
+}
+.footer-nav ul + ul{
+    margin-left: 90px;
+}
+.footer-nav ul li:hover{
+    color: #ff5912;
+}
+.footer-nav ul li + li{
+    margin-top: 21px;
+}
+.payment-methods>span{
+    font-family:'Harmonia_semibold';
+    font-size: 16px;
+}
+.payment-methods-icon{
+    margin-top: 22px;
+}
+.payment-methods-icon li + li{
+    margin-left: 7px;
 }
 /*DEFAULT COMPONENTS END*/
 
@@ -476,8 +521,9 @@ input[type="checkbox"]:checked + label::before {
     margin-bottom: 0;
 }
 .dollor{
+    font-family:'Harmonia_black';
     display: inline-block;
-    margin-left: -10px;
+    margin-left: -3px;
     font-size: 25px;
 }
 .sales-block{
@@ -527,7 +573,7 @@ input[type="checkbox"]:checked + label::before {
     letter-spacing: .6em;
 
 }
-.best-sales .section-descriptions{
+.best-sales .paragraph-description{
     margin-bottom: 80px;
 }
 .best-item{
@@ -535,14 +581,9 @@ input[type="checkbox"]:checked + label::before {
 }
 .best-item-img{
     padding:0 25px;
-    border-right: 1px solid #eaedef;
 }
 .best-item-img img{
     width: 100%;
-}
-.best-item-title{
-    font-family:'Harmonia_bold';
-    font-size: 18px;
 }
 .best-item-title a:hover{
     color: #34404b;
@@ -559,6 +600,7 @@ input[type="checkbox"]:checked + label::before {
 .best-item-description{
     position: relative;
     padding:0 25px;
+    border-left: 1px solid #eaedef;
 }
 .empty-star{
     color: #e8ecf3;
@@ -592,6 +634,70 @@ input[type="checkbox"]:checked + label::before {
 .best-item:hover .best-item-info{
     opacity: 0;
 }
+.more-item-product{
+    font-family:'Harmonia_italic';
+    font-size: 14px;
+}
+.letter-title{
+    text-transform: uppercase;
+}
+.join-us{
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 30px;
+}
+.subscribe-input{
+    min-width: 290px;
+    color: #7c8791;
+    padding: 0 11px;
+}
+.btn{
+    padding: 17px 30px;
+    font-family:'Harmonia_semibold';
+    border: none;
+    border-radius: 0;
+}
+.btn.btn-default{
+    background-color: #ff5912;
+    color: #ffffff;
+}
+.btn.btn-default:hover{
+    background-color: rgba(52, 64, 75, .8);
+}
 .category-wrap{
     padding-top: 120px;
+    padding-bottom: 60px;
+}
+.category-wrap .product-item{
+    margin-bottom: 30px;
+}
+.category-wrap .show-more-items{
+    margin-top: 0;
+}
+.aside-section, .ui-widget{
+    font-family:'Harmonia_semibold';
+    font-size: 16px;
+}
+.aside-section .aside-title{
+    font-family:'Harmonia_black';
+    margin-bottom: 38px;
+    font-size: 18px;
+}
+.categories ul li + li{
+    margin-top: 37px;
+}
+.range{
+    margin-top: 60px;
+    font-size: 14px;
+}
+#fromValue,
+#toValue{
+    padding: 0 4px;
+    width: 45px;
+    height: 25px;
+    background-color: #edf0f2;
+    margin-left: 5px;
+}
+.aside-section .checkbox-group + .checkbox-group{
+    margin-top: 30px;
 }
