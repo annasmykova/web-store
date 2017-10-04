@@ -647,7 +647,8 @@ footer .footer-logo{
     margin-left: 30px;
 }
 .subscribe-input{
-    min-width: 290px;
+    margin-right: 30px;
+    min-width: 260px;
     color: #7c8791;
     padding: 0 11px;
 }
@@ -701,3 +702,25 @@ footer .footer-logo{
 .aside-section .checkbox-group + .checkbox-group{
     margin-top: 30px;
 }
+
+/*product slider start*/
+.product-slider{
+    width: 330px;
+}
+
+/*product slider end*/
+/*product description start*/
+.size-radio input[type="radio"]{
+    display: none;
+}
+.size-radio label{
+    font-size: 14px;
+    user-select: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.size-radio input[type="radio"]:checked + label{
+    color: #ff5912;
+    font-size: 18px;
+}
+/*product description end*/

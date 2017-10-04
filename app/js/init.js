@@ -66,4 +66,12 @@ $( function() {
 
     });
 
+    //flexslider init
+    $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails"
+    });
+
+    //formstyler init
+    $('.input-quantity').styler();
 } );
