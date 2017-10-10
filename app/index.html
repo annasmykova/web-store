@@ -9,6 +9,10 @@
 
     <!--Fontawesome-->
     <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- jQuery UI Style -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--Slicknav-->
+    <link rel="stylesheet" href="css/slicknav.css">
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
@@ -152,7 +156,7 @@
             </p>
             <div class="items-wrap">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="product-item text-center white-bg">
                             <div class="item-img white-bg">
                                 <a href="">
@@ -185,7 +189,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="product-item text-center white-bg">
                             <div class="item-img">
                                 <a href="">
@@ -218,7 +222,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="product-item text-center white-bg">
                             <div class="item-img">
                                 <a href="">
@@ -251,7 +255,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="product-item text-center white-bg">
                             <div class="item-img">
                                 <a href="">
@@ -298,7 +302,7 @@
     <section class="default-section sale-n-adv">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-7 col-xs-12">
                     <div class="kit white-bg">
                         <div class="flex-container align-center justify-sb">
                             <div class="sales-block">
@@ -324,7 +328,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 col-xs-12">
                     <div class="white-bg text-center adv-area">
                         <div class="adv-area-title">
                             <span>adv</span>
@@ -346,7 +350,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="best-item white-bg flex-container justify-sb align-center">
                         <a href="" class="best-item-img">
                             <img src="img/item-img-1-min.png" alt="">
@@ -364,8 +368,8 @@
                                 </ul>
                                 <span class="best-item-price text-orange">100$</span>
                             </div>
-                            <div class="best-item-cart-hover text-center white-bg flex-container align-center">
-                                <a href="">
+                            <div class="best-item-cart-hover text-center white-bg">
+                                <a href="" class=" flex-container align-center">
                                     <span class="icon icon-add-to-cart-hover-ic"></span>
                                     <span class="best-item-cart-hover-text text-orange">
                                         add to cart
@@ -376,7 +380,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="best-item white-bg flex-container justify-sb align-center">
                         <a href="" class="best-item-img">
                             <img src="img/item-img-1-min.png" alt="">
@@ -394,16 +398,19 @@
                                 </ul>
                                 <span class="best-item-price text-orange">100$</span>
                             </div>
-                            <div class="best-item-cart-hover text-center white-bg flex-container">
-                                <a href="" class="icon icon-add-to-cart-hover-ic"></a>
-                                <a href="" class="best-item-cart-hover-text text-orange">
-                                    add to cart
+                            <div class="best-item-cart-hover text-center white-bg">
+                                <a href="" class=" flex-container align-center">
+                                    <span class="icon icon-add-to-cart-hover-ic"></span>
+                                    <span class="best-item-cart-hover-text text-orange">
+                                        add to cart
+                                    </span>
                                 </a>
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 hidden-xs hidden-sm">
                     <div class="best-item white-bg flex-container justify-sb align-center">
                         <a href="" class="best-item-img">
                             <img src="img/item-img-1-min.png" alt="">
@@ -421,11 +428,14 @@
                                 </ul>
                                 <span class="best-item-price text-orange">100$</span>
                             </div>
-                            <div class="best-item-cart-hover text-center white-bg flex-container">
-                                <a href="" class="icon icon-add-to-cart-hover-ic"></a>
-                                <a href="" class="best-item-cart-hover-text text-orange">
-                                    add to cart
+                            <div class="best-item-cart-hover text-center white-bg">
+                                <a href="" class=" flex-container align-center">
+                                    <span class="icon icon-add-to-cart-hover-ic"></span>
+                                    <span class="best-item-cart-hover-text text-orange">
+                                        add to cart
+                                    </span>
                                 </a>
+
                             </div>
                         </div>
                     </div>
@@ -489,7 +499,11 @@
 </footer>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/jquery.slicknav.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-</body>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/init.js"></script>
 </html>
