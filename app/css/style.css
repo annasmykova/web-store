@@ -305,6 +305,11 @@ button{
         font-size: 35px;
     }
 }
+@media (max-width: 479px) {
+    .title.big{
+        font-size: 26px;
+    }
+}
 .default-section{
     padding: 60px 0;
 }
@@ -424,6 +429,8 @@ button{
     -webkit-align-items: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    max-width: 163px;
+    margin:auto;
 }
 .product-item .item-controls{
     margin-top: 30px;
@@ -972,16 +979,6 @@ footer .footer-logo{
 .btn.btn-default:hover{
     opacity: .85;
 }
-.category-wrap{
-    padding-top: 120px;
-    padding-bottom: 60px;
-}
-.category-wrap .product-item{
-    margin-bottom: 30px;
-}
-.category-wrap .show-more-items{
-    margin-top: 0;
-}
 @media (max-width: 991px) {
     .subscribe-form{
         -webkit-flex-wrap: wrap;
@@ -1031,6 +1028,73 @@ footer .footer-logo{
     }
     .subscribe-input{
         min-width: auto;
+    }
+}
+
+.category-wrap{
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+.category-wrap .product-item{
+    margin-bottom: 30px;
+}
+.category-wrap .show-more-items{
+    margin-top: 0;
+}
+.mobile-sidebar-btn{
+    display: none;
+    font-size: 30px;
+    color: #ff5912;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+    .mobile-sidebar-btn {
+        display: block;
+    }
+    .mobile-sidebar-btn .fa{
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+    .mobile-sidebar-wrap{
+        position: absolute;
+        -webkit-transform: translateX(-150%);
+            -ms-transform: translateX(-150%);
+                transform: translateX(-150%);
+        z-index: 99;
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        left: 0;
+        right: 0;
+    }
+    main.show .mobile-sidebar-wrap{
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+    }
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        z-index: -1;
+        background-color: rgba(0,0,0, .4);
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+    main.show .overlay{
+        opacity: 1;
+        z-index: 98;
+    }
+    main.show .mobile-sidebar-btn .fa{
+        -webkit-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+                transform: rotate(-180deg);
     }
 }
 .aside-section, .ui-widget{
