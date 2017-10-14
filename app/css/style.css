@@ -184,6 +184,9 @@ button{
 /*DEFAULT CLASSES END*/
 
 /*DEFAULT COMPONENTS START*/
+.header{
+    position: relative;
+}
 .header .top-header{
     padding: 23px 0;
 }
@@ -915,7 +918,7 @@ footer .footer-logo{
     .best-item-description{
         padding: 0;
         text-align: center;
-        width: 50%;
+        width: 60%;
     }
     .best-item-info{
         -webkit-justify-content: space-around;
@@ -1013,17 +1016,6 @@ footer .footer-logo{
     .subscribe-form form button{
         width: 100%;
         margin-top: 20px;
-    }
-    .subscribe-description{
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
     }
     .subscribe-input{
         min-width: auto;
@@ -1132,8 +1124,38 @@ footer .footer-logo{
 .product-slider .flexslider{
     margin-bottom: 0;
 }
+
+@media (max-width: 991px) {
+    .flex-direction-nav a{
+        opacity: .8;
+    }
+}
+@media (max-width: 478px) {
+    .product-slider{
+        width: 300px;
+    }
+    .flex-control-thumbs li{
+        width: 90px;
+    }
+
+    element.style {
+        width: 300px;
+        margin-right: 0px;
+        float: left;
+        display: block;
+    }
+    .flexslider .slides > li{
+        width: 300px;
+    }
+}
+
 /*product slider end*/
 /*product description start*/
+
+.product-wrap{
+    padding: 60px 0 85px;
+    margin-bottom: 60px;
+}
 .size-radio{
     position: relative;
 }
@@ -1211,11 +1233,42 @@ footer .footer-logo{
     color: #34404b;
     margin-right: auto;
 }
-/*product description end*/
-.product-wrap{
-    padding: 60px 0 85px;
-    margin-bottom: 60px;
+@media (max-width: 599px) {
+    .product-wrap{
+        padding: 60px 0 40px;
+    }
+    #product-option-form,
+    .order-prod-now{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    #product-option-form .vertical-bd{
+        display: none;
+    }
+    #product-option-form > *{
+        width: 100%;
+    }
+    #product-option-form .item-count{
+        margin-top: 20px;
+    }
+    .order-prod-now{
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+    }
+    .order-prod-now .order-price{
+        width: 50%;
+        margin: 0;
+    }
+    .order-prod-now .item-controls{
+        width: 50%;
+    }
+    .order-prod-now button.btn-default{
+        margin: 35px auto 0;
+    }
 }
+/*product description end*/
 .range-input-reoup{
     display: -webkit-box;
     display: -webkit-flex;
