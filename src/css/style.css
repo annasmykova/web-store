@@ -927,6 +927,12 @@ footer .footer-logo{
     .subscribe-input{
         min-width: auto;
     }
+    .subscribe-description{
+        margin-right: auto;
+    }
+    .subscribe-description .letter-title{
+        display: block;
+    }
 }
 
 .category-wrap{
